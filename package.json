@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "ts-node-dev --transpile-only --ignore-watch nome_modules src/server.ts",
     "typeorm": "ts-node-dev node_modules/typeorm/cli.js",
-    "test": "set NODE_ENV=test&&jest",
-    "posttest": "cd src/database/ && del /f database.test.sqlite"
+    "test": "set NODE_ENV=test&&jest -i"
   },
   "dependencies": {
     "express": "^4.17.1",
